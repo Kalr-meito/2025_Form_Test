@@ -25,13 +25,17 @@ namespace Form_Test
                 testButton.Location = new Point(50 * i, 50 * j);
                 testButton.Size = new Size(50, 50);
                 testButton.Text = ("(^▽^)/");
+                    testButton.Click += button1_Click;
                 Controls.Add(testButton);
             }
         }
 
 
        
-
+        private void hogehogeClick (object sender, EventArgs e)
+        {
+            MessageBox.Show("あたりは未実装です。");
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("ハズレで～す( ´∀｀ )");
